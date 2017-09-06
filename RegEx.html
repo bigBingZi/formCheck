@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单表单验证</title>
+<link href="css/RegEx.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .email{
+            display: block;
+        }
+        .sellphoneNum{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<form action="submit.php" method="get" onsubmit="return check()">
+<input title="输入姓名" name="name" placeholder="请输入姓名" id="name" class="name">
+<input title="输入邮箱" name="email" placeholder="Example@email.com" id="email" class="email" >
+<input title="输入手机号" name="sellphoneNum" placeholder="139开头字段" id="sellphoneNum" class="sellphoneNum">
+<input titile="提交信息" type="submit" name="submit" id="submit" value="提交">
+</form>
+    <script type="text/javascript" defer="defer" src="js/RegEx.js"></script>
+</body>
+</html>
